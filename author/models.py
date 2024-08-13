@@ -7,3 +7,6 @@ class author(models.Model):
     age=models.IntegerField(validators=[MaxValueValidator(60),MinValueValidator(20)])
     city = models.CharField(max_length=100,null=True)
     rating=models.IntegerField(validators=[MaxValueValidator(5),MinValueValidator(1)],null=True)
+    
+    def __str__(self) -> str:
+        return f'{self.first_name} , {self.last_name},{self.age},{self.city}'
