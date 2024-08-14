@@ -6,9 +6,10 @@
     <title>{{title}}</title>
 </head>
 <body>
+    <h1>authors name !!!</h1>
     <ul>
         {%for auth in author%}
-        <li><a href='{{auth_details}}'>{{auth.first_name}}</li>
+        <li><a href="{% url 'author-details' auth.id %}">{{auth.first_name}}</li>
         {% endfor%}
     </ul>
     

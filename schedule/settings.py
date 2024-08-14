@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'schedule.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bookmanagement',
+        'NAME': 'Bookmanagement',
         'PORT': '3306',
         'USER': 'root',
         'PASSWORD':'',
